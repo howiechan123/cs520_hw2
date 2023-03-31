@@ -39,7 +39,8 @@ public class RowGameModel
     }
 
     public void setPlayer(String player){
-        if(!player.equals("1") || !player.equals("2")) {
+        if(!player.equals("1") && !player.equals("2")) {
+            System.out.println(player);
             throw new IllegalArgumentException();
         }
         else {
